@@ -26,7 +26,7 @@ class LinearModel():
     def predict(self, X):
         if self._parameters is None:
             raise ValueError("The model hasn't been fitted yet.")
-        X = np.insert(X, 0, np.ones((len(X))), axis=1)
+        X = np.insert(X, 0, np.ones(len(X)), axis=1)
         return np.dot(X, self._parameters)
 
     @property
