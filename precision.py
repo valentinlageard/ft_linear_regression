@@ -50,7 +50,7 @@ def main():
         # print(f"Variance: {}", np.sum((y - predictions) ** 2) / (sample_size - 2))
         print(f"Model standard error: {regression_standard_error}")
         print(f"Slope standard error: {standard_error_slope}")
-        print(f"Intercept standard error intercept: {standard_error_intercept}")
+        print(f"Intercept standard error: {standard_error_intercept}")
         print(f"Confidence interval 95%: ±{confidence_interval_95}")
 
         plt.scatter(data[:, 0], data[:, 1])
